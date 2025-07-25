@@ -372,3 +372,158 @@ nav a {
 .footer-social img:hover {
   transform: scale(1.1);
 }
+
+/* Mobile Responsive - iPhone 14/15 Pro (max-width: 390px) */
+@media (max-width: 576px) {
+
+  /* Navbar */
+  nav a:not(:last-child) {
+    display: none;
+  }
+
+  header {
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .hero-img {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* Plants Section */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  /* About / Lover Section */
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .about-image {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .about-text ul {
+    font-size: 14px;
+  }
+
+  /* Join Section */
+  .join-bunch {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .join-content h2 {
+    font-size: 24px;
+  }
+
+  .email-subscribe {
+    flex-direction: column;
+  }
+
+  .email-subscribe input {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .email-subscribe button {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .footer-left {
+    margin-bottom: 20px;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .footer-links div {
+    margin-bottom: 20px;
+  }
+
+  .footer-links p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-social img {
+    width: 26px;
+    height: 26px;
+  }
+}
