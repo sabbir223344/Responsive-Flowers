@@ -56,6 +56,7 @@ nav a {
 
 .hero-text p {
   max-width: 500px;
+   color:#666;
 }
 
 .hero-img img {
@@ -148,9 +149,10 @@ nav a {
 .trust{
     position:relative;
     margin-top: -450px;
-    left: 50px;
+    left: 60px;
     width: 286px;
-    height: 286px;  
+    height: 286px;
+     
     
 }
 
@@ -254,4 +256,119 @@ nav a {
 .right {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
+}
+.join-bunch {
+  position: relative;
+  background: url('assets/news-letter-bg.png') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.join-bunch .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.join-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.join-content h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.email-subscribe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.email-subscribe input {
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 6px 0 0 6px;
+}
+
+.email-subscribe button {
+  padding: 14px 30px;
+  font-size: 16px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-subscribe button:hover {
+  background-color: #ea580c;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  padding: 50px 30px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left .footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: center; /* changed from space-between */
+  gap: 150px; /* controls how close the two columns are */
+  min-width: 300px;
+  color: #6B7280;
+  
+}
+.footer-links div p {
+  margin: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
 }
